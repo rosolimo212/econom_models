@@ -1,6 +1,7 @@
 import random
 import numpy as np
 import pandas as pd
+import datetime
 
 # тестовая функция
 def test():
@@ -296,11 +297,11 @@ def model(cit_lst, fact_lst, R):
     fact_df=pd.DataFrame()
     
     for r in range(R):
-        print('Round ', r, ' started')
+        print(datetime.datetime.now(), ': round ', r, ' started')
         cit_df_r, fact_df_r=market_period(cit_lst, fact_lst, r)
         cit_df=pd.concat([cit_df, cit_df_r])
         fact_df=pd.concat([fact_df, fact_df_r])
     
-    print('Modelling finished')
+    print(datetime.datetime.now(), ' :modelling finished')
         
     return cit_df, fact_df
