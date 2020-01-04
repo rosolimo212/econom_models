@@ -64,9 +64,9 @@ class citizen:
     # все схемы на основе генератора случайных чисел
     def set_salary(self):
         # "коммунизм", у всех одинаковое случайное число
-        # return round(random.randint(10, 100),2)
+        #  return round(random.randint(10, 100),2)
         # "развитой социализм", нормальное распределение, у большиснтва средняя зарплата
-        #return round(random.normalvariate((100-10)/2, 10),2)
+        # return round(random.normalvariate((100-10)/2, 10),2)
         # "современное общество", есть длинный правый хвост
         return round(random.gammavariate(citizen_salary_parameter1, citizen_salary_parameter2),2)
         
