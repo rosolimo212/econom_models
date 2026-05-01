@@ -1,0 +1,29 @@
+[build-system]
+# setuptools>=64: PEP 660 editable installs (hooks.build_editable)
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "econom-sim"
+version = "2.0.0"
+description = "Modular classical market simulation"
+readme = "readme.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "pydantic>=2.0",
+    "pyyaml>=6.0",
+    "pyarrow>=14.0",
+]
+
+[project.optional-dependencies]
+ui = ["streamlit>=1.28", "plotly>=5.18"]
+dev = ["econom-sim[ui]", "pytest>=7.0"]
+
+[project.scripts]
+econom-sim-cli = "econom_sim.ui.cli_step:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["econom_sim*"]

@@ -1,0 +1,47 @@
+[
+  {
+    "period": 0,
+    "metrics": {
+      "gini_factory_capital": 0.206563,
+      "gini_citizen_money": 0.34376,
+      "mean_price": 0.0,
+      "mean_quality": 0.0,
+      "sales_count": 0,
+      "bankrupt_factories": 0,
+      "employed_citizens": 0,
+      "total_citizen_money": 645.98,
+      "total_factory_capital": 2429.19
+    },
+    "fcap": 2429.19
+  },
+  {
+    "period": 1,
+    "metrics": {
+      "gini_factory_capital": 0.211082,
+      "gini_citizen_money": 0.34376,
+      "mean_price": 0.0,
+      "mean_quality": 0.0,
+      "sales_count": 0,
+      "bankrupt_factories": 0,
+      "employed_citizens": 0,
+      "total_citizen_money": 645.98,
+      "total_factory_capital": 1987.03
+    },
+    "fcap": 1987.03
+  },
+  {
+    "period": 2,
+    "metrics": {
+      "gini_factory_capital": 0.206025,
+      "gini_citizen_money": 0.34376,
+      "mean_price": 0.0,
+      "mean_quality": 0.0,
+      "sales_count": 0,
+      "bankrupt_factories": 0,
+      "employed_citizens": 0,
+      "total_citizen_money": 645.98,
+      "total_factory_capital": 1716.2
+    },
+    "fcap": 1716.2
+  }
+]
