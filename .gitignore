@@ -1,0 +1,61 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.Python
+
+# virtualenv
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# packaging / build
+*.egg
+*.egg-info/
+dist/
+build/
+*.so
+*.dll
+*.dylib
+
+# tools & tests cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# --- Project: сгенерированные и тяжёлые данные ---
+# снимки симуляций, parquet/csv выгрузки, streamlit_last*, и т.п.
+/data/
+
+# бинарные таблицы симуляций (в любом каталоге)
+*.parquet
+
+# мелкие датасеты и картинки в корне репозитория (не конфиги)
+/*.csv
+/*.png
+
+# при необходимости раскомментируйте:
+# old_versions/
+
+# логи
+*.log
